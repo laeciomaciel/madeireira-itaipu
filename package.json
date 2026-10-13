@@ -1,0 +1,10 @@
+{
+  "name": "madeireira-itaipu",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site institucional da Madeireira Itaipu",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  }
+}
