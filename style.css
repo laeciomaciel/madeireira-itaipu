@@ -13,3 +13,6 @@
 .brands img[src$="duratex-oficial.svg"]{padding-inline:6px}
 .brands img:hover{filter:grayscale(0);opacity:1}
 @media(prefers-reduced-motion:reduce){.brands img{transition:none}}
+
+/* Sobre: título inteiro em uma linha no desktop, sem ultrapassar telas pequenas. */
+@media(max-width:800px){.page-intro h1[style*="white-space:nowrap"]{white-space:normal!important}}
