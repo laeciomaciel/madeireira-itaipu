@@ -16,3 +16,22 @@
 
 /* Sobre: título inteiro em uma linha no desktop, sem ultrapassar telas pequenas. */
 @media(max-width:800px){.page-intro h1[style*="white-space:nowrap"]{white-space:normal!important}}
+.history-gallery{
+  display:grid;
+  gap:14px;
+  margin-top:24px;
+}
+
+.history-gallery img{
+  width:100%;
+  aspect-ratio:4 / 3;
+  object-fit:cover;
+  border-radius:3px;
+  display:block;
+}
+
+@media(max-width:800px){
+  .history-gallery{
+    grid-template-columns:1fr;
+  }
+}
