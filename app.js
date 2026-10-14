@@ -2,43 +2,43 @@
 const MAIN_WHATSAPP = '';
 const contacts = [
   [
-    "Anne Azevedo - Itaipu Sul - Portas, Janelas e Madeiras",
+    "Anne Azevedo - Portas, Janelas e Madeiras",
     "5585992686735"
   ],
   [
-    "Elane - Itaipu Sul",
+    "Elane",
     "5585992225908"
   ],
   [
-    "Gladson - Itaipu Sul",
+    "Gladson",
     "5585989566602"
   ],
   [
-    "Letícia - Itaipu Sul",
+    "Letícia",
     "5585991533481"
   ],
   [
-    "Márcio - Itaipu Sul",
+    "Márcio",
     "5585999851702"
   ],
   [
-    "Natália - Itaipu Sul",
+    "Natália",
     "5585991854377"
   ],
   [
-    "Rosângela - Itaipu Sul - Portas, Janelas e Madeiras",
+    "Rosângela - Portas, Janelas e Madeiras",
     "5585989026882"
   ],
   [
-    "Sheila - Itaipu Sul - Portas, Janelas e Madeiras",
+    "Sheila - Portas, Janelas e Madeiras",
     "5585992328481"
   ],
   [
-    "Simones - Itaipu Sul",
+    "Simones",
     "5585989566502"
   ],
   [
-    "Valter - Itaipu Sul",
+    "Valter",
     "5585996760654"
   ],
   [
