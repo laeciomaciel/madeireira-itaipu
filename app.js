@@ -106,7 +106,7 @@ const toggle=document.querySelector('.menu-toggle'),nav=document.querySelector('
 toggle.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')!=='true';toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'Fechar menu':'Abrir menu');nav.classList.toggle('open',open)});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Abrir menu')}});
 const dialog=document.querySelector('#contact-dialog'),select=document.querySelector('#attendant'),chat=document.querySelector('#start-chat');
-for(const [name,number] of contacts){const opt=document.createElement('option');opt.textContent=name;opt.value=number;select.append(opt)}
+const sulGroup=document.createElement('optgroup');sulGroup.label='Atendimento Itaipu Sul';sulGroup.className='contact-group-sul';const matrizGroup=document.createElement('optgroup');matrizGroup.label='Atendimento Itaipu Matriz';matrizGroup.className='contact-group-matriz';contacts.forEach(([name,number],index)=>{const opt=document.createElement('option');opt.textContent=name;opt.value=number;(index<10?sulGroup:matrizGroup).append(opt)});select.append(sulGroup,matrizGroup)
 let topic='atendimento';
 const url=number=>`https://wa.me/${number}?text=${encodeURIComponent(topic==='atendimento'?'Olá! Vim pelo site da Madeireira Itaipu e gostaria de um atendimento.':`Olá! Vim pelo site da Madeireira Itaipu e gostaria de informações e orçamento para ${topic}.`)}`;
 function sync(){if(select.value){chat.href=url(select.value);chat.removeAttribute('aria-disabled');chat.tabIndex=0}else{chat.removeAttribute('href');chat.setAttribute('aria-disabled','true');chat.tabIndex=-1}}
