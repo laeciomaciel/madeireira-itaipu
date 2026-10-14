@@ -41,3 +41,6 @@
 
 /* Evita que a logo ampliada sobreponha ações no mobile estreito. */
 @media(max-width:520px){.brand{width:min(294px,calc(100vw - 160px));height:108px}.brand img{width:100%;height:100%;object-fit:contain}}
+
+/* Destaques da página inicial sem numeração */
+.benefits span{color:var(--green);font-weight:700}
