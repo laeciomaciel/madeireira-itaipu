@@ -35,3 +35,6 @@
     grid-template-columns:1fr;
   }
 }
+
+/* Alinhar o início da narrativa ao topo da primeira foto histórica. */
+@media(min-width:801px){.about-text:has(.history-gallery)>div:nth-child(2){padding-top:116px}}
