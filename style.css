@@ -47,4 +47,4 @@
 
 /* Logo oficial no rodapé: mesma arte do cabeçalho, sem cortes. */
 .footer-brand{display:inline-flex;align-items:center;max-width:100%;margin-bottom:20px}
-.footer-brand img{display:block;width:330px;max-width:100%;height:auto;object-fit:contain;object-position:left center}
+.footer-brand img{display:block;width:330px;max-width:100%;height:auto;object-fit:contain;object-position:left center;margin-left:-12px}
