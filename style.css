@@ -16,6 +16,10 @@
 
 /* Sobre: título inteiro em uma linha no desktop, sem ultrapassar telas pequenas. */
 @media(max-width:800px){.page-intro h1[style*="white-space:nowrap"]{white-space:normal!important}}
+.btn,button{border-radius:12px}
+.hero-visual,.product-image,.catalog-image,
+.story-photo img,.about-photo img,.address-card img{border-radius:16px}
+
 .history-gallery{
   display:grid;
   gap:14px;
@@ -26,7 +30,7 @@
   width:100%;
   aspect-ratio:4 / 3;
   object-fit:cover;
-  border-radius:3px;
+  border-radius:16px;
   display:block;
 }
 
