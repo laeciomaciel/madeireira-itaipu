@@ -35,7 +35,7 @@
 }
 
 .story-photos .story-photo:first-child img{object-position:35% center}
-.story-photos .story-photo:nth-child(2) img{object-position:right center}
+.story-photos .story-photo:nth-child(2) img{object-position:75% center}
 
 @media(max-width:800px){
   .history-gallery{
