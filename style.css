@@ -34,7 +34,7 @@
   display:block;
 }
 
-.story-photos .story-photo:first-child img{object-position:left center}
+.story-photos .story-photo:first-child img{object-position:25% center}
 .story-photos .story-photo:nth-child(2) img{object-position:right center}
 
 @media(max-width:800px){
