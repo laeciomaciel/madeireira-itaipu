@@ -52,6 +52,15 @@
 /* Destaques da página inicial sem numeração */
 .benefits span{color:var(--green);font-weight:700}
 
+.service-detail:has(.service-photo){grid-template-columns:60px minmax(0,1fr) minmax(0,1fr);gap:32px;align-items:center}
+.service-detail:has(.service-photo)>.large-number{grid-column:1;grid-row:1;align-self:start}
+.service-detail:has(.service-photo)>div{grid-column:2;grid-row:1}
+.service-detail>.service-photo{grid-column:3;grid-row:1;display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:16px}
+@media(max-width:800px){
+  .service-detail:has(.service-photo){grid-template-columns:35px minmax(0,1fr);gap:20px}
+  .service-detail>.service-photo{grid-column:2;grid-row:2}
+}
+
 /* Logo oficial no rodapé: mesma arte do cabeçalho, sem cortes. */
 /* Enquadramento da arte dentro do PNG 1920x1080: bordas transparentes removidas visualmente apenas no rodapé. */
 .footer-brand{position:relative;display:block;width:165px;max-width:100%;aspect-ratio:968/377;overflow:hidden;margin-bottom:20px}
